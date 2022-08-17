@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceCream</title>
+
+    <!-- FavIcon-->
+
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.fe73ed9f.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.9ab673e9.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.73dea1bd.png">
+    <link rel="manifest" href="/favicon-pack/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.253d9e3a.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts styles -->
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- CSS styles -->
+    <!-- slick css -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="/index.b07a87f3.css">
+  </head>
+  <body>
+    <header>
+      <!-- HEADER -->
+
+<div class="container header-flex">
+  <a class="header__logo" href="/index.html"><svg class="header__logo-icon" width="199" height="50">
+      <use href="/icon.6f9183eb.svg#icon-logo"></use></svg></a>
+
+  <!-- MOBILE MENU -->
+
+  <button class="header__burger js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+    <svg class="header__burger-icon" width="20" height="12">
+      <use href="/icon.6f9183eb.svg#icon-Burger"></use>
+    </svg>
+  </button>
+
+  <div class="header__mobile js-menu-container" id="mobile-menu">
+    <button class="header__close js-close-menu" type="button">
+      <svg class="header__close-icon" width="14" height="14">
+        <use href="/icon.6f9183eb.svg#icon-close"></use>
+      </svg>
+    </button>
+    <button class="header__mobile-button" type="button" data-modal-open-mobile="">
+      Buy now
+      <svg class="header__mobile-icon" width="8" height="8">
+        <use href="/icon.6f9183eb.svg#icon-vectorright"></use>
+      </svg>
+    </button>
+    <nav class="header__mobile-nav">
+      <ul class="header__mobile-list">
+        <li class="header__mobile-item">
+          <a class="header__mobile-link header__mobile-link-active" href="#">Home</a>
+        </li>
+        <li class="header__mobile-item">
+          <a class="header__mobile-link" href="#about">About us</a>
+        </li>
+        <li class="header__mobile-item">
+          <a class="header__mobile-link" href="#advantages">How it’s made?</a>
+        </li>
+        <li class="header__mobile-item">
+          <a class="header__mobile-link" href="#products">Our products</a>
+        </li>
+        <li class="header__mobile-item">
+          <a class="header__mobile-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- HEADER NAV MAIN -->
+
+  <nav class="header__nav">
+    <ul class="header__nav-list">
+      <li class="header__nav-item">
+        <a class="header__nav-link" href="#hero">Home</a>
+      </li>
+      <li class="header__nav-item">
+        <a class="header__nav-link" href="#about">About us</a>
+      </li>
+      <li class="header__nav-item">
+        <a class="header__nav-link" href="#advantages">How it’s made?</a>
+      </li>
+      <li class="header__nav-item">
+        <a class="header__nav-link" href="#products">Our products</a>
+      </li>
+      <li class="header__nav-item">
+        <a class="header__nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <button class="header__button" type="button" data-modal-open="">
+    Buy now
+    <svg class="header__button-icon" width="8" height="8">
+      <use href="/icon.6f9183eb.svg#icon-vectorright"></use>
+    </svg>
+  </button>
+</div>
+
+<!-- MODAL FOR MOBILE -->
+
+<div class="backdrop is-hidden" data-modal-mobile="">
+  <div class="modal">
+    <!-- MODAL FORM -->
+
+    <form class="form">
+      <div role="group" class="container-form">
+        <strong class="form__title">
+          Leave your massage we will call you back soon</strong>
+        <label>
+          Name
+          <span class="form__block">
+            <input class="form__input form__field" type="text" name="name" placeholder=" " required="">
+          </span>
+        </label>
+        <label>
+          Phone
+          <span class="form__block">
+            <input class="form__input form__field" type="tel" name="tel" placeholder=" " required="">
+          </span>
+        </label>
+        <label>
+          E-mail
+          <span class="form__block">
+            <input class="form__input form__field" type="email" name="email" placeholder=" " required="">
+          </span>
+        </label>
+        <label class="form__label">
+          Comments
+
+          <textarea class="form__textarea form__field" name="feedback" placeholder="Your comments"></textarea>
+        </label>
+      </div>
+
+      <label class="checkbox__label">
+        <input class="visually-hidden checkbox__input" type="checkbox" required="">
+        <span class="checkbox__icon"></span>
+        I agree with
+        <a class="form__link" href="#"> conditions</a>
+      </label>
+      <button class="form__button" type="submit">SEND</button>
+    </form>
+
+    <button class="modal__button" type="button" data-modal-close-mobile="">
+      <svg width="30" height="30">
+        <use href="/icon.6f9183eb.svg#icon-icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- MODAL CONTAINER -->
+
+<div class="backdrop is-hidden" data-modal="">
+  <div class="modal">
+    <!-- MODAL FORM -->
+
+    <form class="form">
+      <div role="group" class="container-form">
+        <strong class="form__title">
+          Leave your massage we will call you back soon</strong>
+        <label>
+          Name
+          <span class="form__block">
+            <input class="form__input form__field" type="text" name="name" placeholder=" " required="">
+          </span>
+        </label>
+        <label>
+          Phone
+          <span class="form__block">
+            <input class="form__input form__field" type="tel" name="tel" placeholder=" " required="">
+          </span>
+        </label>
+        <label>
+          E-mail
+          <span class="form__block">
+            <input class="form__input form__field" type="email" name="email" placeholder=" " required="">
+          </span>
+        </label>
+        <label class="form__label">
+          Comments
+
+          <textarea class="form__textarea form__field" name="feedback" placeholder="Your comments"></textarea>
+        </label>
+      </div>
+
+      <label class="checkbox__label">
+        <input class="visually-hidden checkbox__input" type="checkbox" required="">
+        <span class="checkbox__icon"></span>
+        I agree with
+        <a class="form__link" href="#"> conditions</a>
+      </label>
+      <button class="form__button" type="submit">SEND</button>
+    </form>
+
+    <button class="modal__button" type="button" data-modal-close="">
+      <svg width="30" height="30">
+        <use href="/icon.6f9183eb.svg#icon-icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+    </header>
+    <main>
+      <section class="hero" id="hero">
+  <div class="container hero-bg">
+    <!-- HERO -->
+    <div class="hero__main-container">
+      <div class="hero__title-container">
+        <h1 class="hero__title">
+          ice cream made with <span class="hero__title-big">passion</span>
+        </h1>
+        <div class="hero__link-container">
+          <a class="hero__button-product" href="#products"> Products </a>
+          <a class="hero__button-made" href="#advantages"> How it’s made? </a>
+        </div>
+      </div>
+      <div class="hero-subtitle-container">
+        <div class="hero-svg-container">
+          <h2 class="hero__subtitle">16</h2>
+          <p class="hero__subtitle-text">cafes</p>
+          <svg class="hero__elipse-icon" width="16" height="16">
+            <use href="/icon.6f9183eb.svg#icon-elipsesmall"></use>
+          </svg>
+        </div>
+
+        <div class="hero-svg-container">
+          <h2 class="hero__subtitle">23</h2>
+          <p class="hero__subtitle-text">food trucks</p>
+          <svg class="hero__elipse-icon" width="16" height="16">
+            <use href="/icon.6f9183eb.svg#icon-elipsesmall"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="hero-text-container">
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+
+      <button class="hero__button-arrow" type="button">
+        <picture>
+          <source srcset="/arrow-right1200.870b4a0c.png    1x, /arrow-right1200@2x.0455a131.png 2x" media="(min-width: 1200px)">
+          <source srcset="/arrow-right768.2d71b219.png    1x, /arrow-right768@2x.eca467cc.png 2x" media="(min-width: 768px)">
+          <img class="button__arrow-right animate__animated animate__flip animate__delay-2s" src="/arrow-right768.2d71b219.png" alt="Cow with milk" loading="lazy">
+        </picture>
+      </button>
+    </div>
+
+    <picture>
+      <source srcset="/milk1200.3a5d8704.png    1x, /milk1200@2x.8023f2ee.png 2x" media="(min-width: 1200px)">
+      <source srcset="/milk768.54ef69e1.png    1x, /milk768@2x.2555ce32.png 2x" media="(min-width: 768px)">
+      <img class="hero__img-milk animate__animated animate__bounce animate__delay-2s animate__repeat-2" src="/milk768.54ef69e1.png" alt="Cow with milk" loading="lazy">
+    </picture>
+
+    <div class="hero-wrapper">
+      <picture>
+        <source srcset="/icemain1200.bbb113d5.png    1x, /icemain1200@2x.15b75083.png 2x" media="(min-width: 1200px)">
+        <source srcset="/icemain768.43f0abfb.png    1x, /icemain768@2x.95827396.png 2x" media="(min-width: 768px)">
+        <source srcset="/icemain320.44d838b6.png    1x, /icemain320@2x.beb6e597.png 2x" media="(max-width: 767px)">
+        <img class="hero__icecream-main animate__animated animate__tada animate__delay-2s animate__repeat-1" src="/icemain320.44d838b6.png" alt="Cow with milk" loading="lazy">
+      </picture>
+
+      <picture>
+        <source srcset="/ellipse1200.00bd475a.png    1x, /ellipse1200@2x.a169aed8.png 2x" media="(min-width: 1200px)">
+        <source srcset="/ellipse768.55120ef3.png    1x, /ellipse768@2x.dbb87ba8.png 2x" media="(min-width: 768px)">
+        <source srcset="/ellipse320.1448ce1b.png    1x, /ellipse320@2x.5f67a0f3.png 2x" media="(max-width: 767px)">
+        <img class="hero__ellipse-main animate__animated animate__fadeInTopRight animate__delay-2s" src="/ellipse320.1448ce1b.png" alt="Cow with milk" loading="lazy">
+      </picture>
+    </div>
+
+    <picture>
+      <source srcset="/tasty1200.42ab2985.png    1x, /tasty1200@2x.bb82cea3.png 2x" media="(min-width: 1200px)">
+      <source srcset="/tasty768.a4860d31.png    1x, /tasty768@2x.6c48b2f9.png 2x" media="(min-width: 768px)">
+
+      <img class="hero__img-tastygirl animate__animated animate__heartBeat animate__repeat-2 animate__delay-2s" src="/tasty768.a4860d31.png" alt="Cow with milk" loading="lazy">
+    </picture>
+  </div>
+</section>
+
+      <section class="section section--products" id="products">
+  <div class="container">
+    <div class="naming products-name">
+      <p class="naming__label">100% natural</p>
+      <h2 class="naming__title">products</h2>
+    </div>
+    <ul class="products-card__list">
+      <li class="products-card__item pink">
+        <h3 class="products-card__title">ice cream</h3>
+        <p class="products-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et</p>
+        <button class="products-card-btn" type="button" data-products-modal-pink-open="">
+          <svg class="products-icon" width="10" height="10">
+            <use href="/symbol-defs.62bef74d.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="products-card__item yellow">
+        <h3 class="products-card__title">ice coffee</h3>
+        <p class="products-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et</p>
+        <button class="products-card-btn" type="button" data-products-modal-yellow-open="">
+          <svg class="products-icon" width="10" height="10">
+            <use href="/symbol-defs.62bef74d.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="products-card__item green">
+        <h3 class="products-card__title">milkshakes</h3>
+        <p class="products-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et</p>
+        <button class="products-card-btn" type="button" data-products-modal-green-open="">
+          <svg class="products-icon" width="10" height="10">
+            <use href="/symbol-defs.62bef74d.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- PRODUCTS CARD MODALS -->
+
+  <div class="products-modal-pink">
+    <div class="products-backdrop is-hidden" data-products-modal-pink="">
+      <div class="products-modal modal-pink">
+
+        <h3 class="products-card__title">ice cream</h3>
+        <p class="products-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim repellendus
+          similique sint vel quisquam quibusdam numquam minus. Qui, eligendi officia. Consequatur rerum autem iusto ad
+          obcaecati quia libero dolor. Rerum dicta error quae deleniti eos voluptatibus aliquam maxime amet, in veniam
+          impedit dolorum maiores unde corporis nihil natus necessitatibus, sapiente culpa? Consectetur fugiat eius
+          rerum, atque, velit alias obcaecati recusandae nesciunt asperiores neque libero accusamus dignissimos maiores
+          labore in!</p>
+        <p class="products-price">Price:
+          <span class="products-price-number">$2.00</span>
+        </p>
+        <button type="button" class="products-modal-btn" data-products-modal-pink-close="">
+          <svg class="products-icon" width="20" height="20">
+            <use href="/icon.6f9183eb.svg#icon-icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="products-modal-yellow">
+    <div class="products-backdrop is-hidden" data-products-modal-yellow="">
+      <div class="products-modal modal-yellow">
+        <h3 class="products-card__title">ice coffee</h3>
+        <p class="products-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim repellendus
+          similique sint vel quisquam quibusdam numquam minus. Qui, eligendi officia. Consequatur rerum autem iusto ad
+          obcaecati quia libero dolor. Rerum dicta error quae deleniti eos voluptatibus aliquam maxime amet, in veniam
+          impedit dolorum maiores unde corporis nihil natus necessitatibus, sapiente culpa? Consectetur fugiat eius
+          rerum, atque, velit alias obcaecati recusandae nesciunt asperiores neque libero accusamus dignissimos maiores
+          labore in!</p>
+        <p class="products-price">Price:
+          <span class="products-price-number">$5.00</span>
+        </p>
+        <button type="button" class="products-modal-btn" data-products-modal-yellow-close="">
+          <svg class="products-icon" width="20" height="20">
+            <use href="/icon.6f9183eb.svg#icon-icon-close"></use>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="products-modal-green">
+    <div class="products-backdrop is-hidden" data-products-modal-green="">
+      <div class="products-modal modal-green">
+        <h3 class="products-card__title">milkshake</h3>
+        <p class="products-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim repellendus
+          similique sint vel quisquam quibusdam numquam minus. Qui, eligendi officia. Consequatur rerum autem iusto ad
+          obcaecati quia libero dolor. Rerum dicta error quae deleniti eos voluptatibus aliquam maxime amet, in veniam
+          impedit dolorum maiores unde corporis nihil natus necessitatibus, sapiente culpa? Consectetur fugiat eius
+          rerum, atque, velit alias obcaecati recusandae nesciunt asperiores neque libero accusamus dignissimos maiores
+          labore in!</p>
+        <p class="products-price">Price:
+          <span class="products-price-number">$3.00</span>
+        </p>
+        <button type="button" class="products-modal-btn" data-products-modal-green-close="">
+          <svg class="products-icon" width="20" height="20">
+            <use href="/icon.6f9183eb.svg#icon-icon-close"></use>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+      <section class="section section--about" id="about">
+  <div class="container container--about">
+    <div class="naming">
+      <p class="naming__label">tradition and love</p>
+      <h2 class="naming__title">how it’s made?</h2>
+    </div>
+    <div class="about">
+      <picture>
+        <source srcset="/cow-milk-501.a30f457f.png  1x, /cow-milk-1002.2df5bf06.png 2x" media="(min-width: 1200px)">
+        <source srcset="/cow-milk-336.cf19a29a.png 1x, /cow-milk-672.81fb62e3.png 2x" media="(min-width: 768px)">
+        <source srcset="/cow-milk-280.dc41ee4d.png 1x, /cow-milk-560.e2f514bc.png 2x" media="(max-width: 767px)">
+        <img class="about__img" src="/cow-milk-280.dc41ee4d.png" alt="Cow with milk">
+      </picture>
+      <div class="about__description">
+        <p class="about__text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about__secondary-text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt. <br>
+          <br>
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button class="button" type="button" data-about-modal-open="">
+          Read more
+          <svg class="button__icon" width="8" height="16">
+            <use href="/icon.6f9183eb.svg#icon-vectorright"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-modal is-hidden" data-about-modal="">
+    <div class="about-modal__box">
+      <p class="about-modal__label">icecream technology</p>
+      <p class="about-modal__text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero omnis
+        ex ea sint tempora temporibus aliquid eos eveniet porro, exercitationem
+        necessitatibus eum, suscipit aut autem? Sapiente explicabo dolorum
+        ducimus at.
+      </p>
+
+      <button class="about-modal__close-button" type="button" data-about-modal-close="">
+        <svg class="about-modal__close-icon" width="14" height="14">
+          <use href="/icon.6f9183eb.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+      <section class="section--advantages" id="advantages">
+  <div class="container advantages">
+    <!-- скрити h2 -->
+    <h2 class="advantages__title visually-hidden">advantages</h2>
+    <ul class="advantages__list">
+      <li class="advantages__item advantages__wrap--one">
+        <p class="advantages__feature animate__animated animate__pulse animate__delay-2s">721</p>
+        <p class="advantages__text">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li class="advantages__item advantages__wrap--second">
+        <p class="advantages__feature animate__animated animate__pulse animate__delay-2s">16kg</p>
+        <p class="advantages__text">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li class="advantages__item advantages__wrap--third">
+        <p class="advantages__feature animate__animated animate__pulse animate__delay-2s">84</p>
+        <p class="advantages__text">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section section--gallery" id="gallery">
+  <div class="container container--gallery">
+    <ul class="images">
+      <li class="images__item images__item--first">
+        <picture>
+          <source srcset="/img-1.efb22a4e.png    1x, /img-1@2x.68dee3c3.png 2x" media="(min-width: 1200px)">
+          <source srcset="/img-1.c4df0b0b.png    1x, /img-1@2x.1fc74d3a.png 2x" media="(min-width: 768px)">
+          <source srcset="/img-1.e5a848e0.png    1x, /img-1@2x.cd9bf0d3.png 2x" media="(max-width: 767px)">
+          <img class="images__img" src="/img-1.e5a848e0.png" alt="Cow with milk">
+        </picture>
+      </li>
+      <li class="images__item images__item--second">
+        <picture>
+          <source srcset="/img-2.afcab993.png    1x, /img-2@2x.ce39d089.png 2x" media="(min-width: 1200px)">
+          <source srcset="/img-2.67cca6dc.png    1x, /img-2@2x.994e5d21.png 2x" media="(min-width: 768px)">
+          <source srcset="/img-2.31b96b70.png    1x, /img-2@2x.c4219f48.png 2x" media="(max-width: 767px)">
+          <img class="images__img" src="/img-2.31b96b70.png" alt="Cow with milk">
+        </picture>
+        <picture>
+          <source srcset="/img-3.e361afd8.png    1x, /img-3@2x.c1dd61b2.png 2x" media="(min-width: 1200px)">
+          <source srcset="/img-3.db7a3395.png    1x, /img-3@2x.953a50a0.png 2x" media="(min-width: 768px)">
+          <source srcset="/img-3.25ea6373.png    1x, /img-3@2x.4a1b1f66.png 2x" media="(max-width: 767px)">
+          <img class="images__img" src="/img-3.25ea6373.png" alt="Cow with milk">
+        </picture>
+      </li>
+      <li class="images__item images__item--third">
+        <picture>
+          <source srcset="/img-4.75400386.png    1x, /img-4@2x.6ed1608f.png 2x" media="(min-width: 1200px)">
+          <source srcset="/img-4.6d6f605e.png    1x, /img-4@2x.79c40ab0.png 2x" media="(min-width: 768px)">
+          <source srcset="/img-4.97a653a5.png    1x, /img-4@2x.93190ef6.png 2x" media="(max-width: 767px)">
+          <img class="images__img" src="/img-4.97a653a5.png" alt="Cow with milk">
+        </picture>
+        <picture>
+          <source srcset="/img-5.4da3cfe1.png    1x, /img-5@2x.e1859912.png 2x" media="(min-width: 1200px)">
+          <source srcset="/img-5.dc646d47.png    1x, /img-5@2x.ebb86639.png 2x" media="(min-width: 768px)">
+          <source srcset="/img-5.b35f9355.png    1x, /img-5@2x.bbb9aee7.png 2x" media="(max-width: 767px)">
+          <img class="images__img" src="/img-5.b35f9355.png" alt="Cow with milk">
+        </picture>
+      </li>
+      <li class="images__item images__item--fourth">
+        <picture>
+          <source srcset="/img-6.8dead266.png    1x, /img-6@2x.c0cbdf3b.png 2x" media="(min-width: 1200px)">
+          <source srcset="/img-6.b14d4ead.png    1x, /img-6@2x.c82775f7.png 2x" media="(min-width: 768px)">
+          <source srcset="/img-6.87d9b786.png    1x, /img-6@2x.71e55cf6.png 2x" media="(max-width: 767px)">
+          <img class="images__img" src="/img-6.87d9b786.png" alt="Cow with milk">
+        </picture>
+        <picture>
+          <source srcset="/img-7.e2955c9f.png    1x, /img-7@2x.5da8c638.png 2x" media="(min-width: 1200px)">
+          <source srcset="/img-7.126933ac.png    1x, /img-7@2x.65949c9e.png 2x" media="(min-width: 768px)">
+          <source srcset="/img-7.4f4fdd22.png    1x, /img-7@2x.9b615ca3.png 2x" media="(max-width: 767px)">
+          <img class="images__img" src="/img-7.4f4fdd22.png" alt="Cow with milk">
+        </picture>
+      </li>
+      <li class="images__item images__item--fifth">
+        <picture>
+          <source srcset="/img-8.f4994125.png    1x, /img-8@2x.dc965439.png 2x" media="(min-width: 1200px)">
+          <source srcset="/img-8.2165322b.png    1x, /img-8@2x.3ba13efa.png 2x" media="(min-width: 768px)">
+          <source srcset="/img-8.c8880978.png    1x, /img-8@2x.f1fd2b31.png 2x" media="(max-width: 767px)">
+          <img class="images__img" src="/img-8.c8880978.png" alt="Cow with milk">
+        </picture>
+        <picture>
+          <source srcset="/img-9.366937ff.png    1x, /img-9@2x.1e6e33ea.png 2x" media="(min-width: 1200px)">
+          <source srcset="/img-9.68307a16.png    1x, /img-9@2x.80816be3.png 2x" media="(min-width: 768px)">
+          <source srcset="/img-9.2b3c259a.png    1x, /img-9@2x.795a21dd.png 2x" media="(max-width: 767px)">
+          <img class="images__img" src="/img-9.2b3c259a.png" alt="Cow with milk">
+        </picture>
+      </li>
+      <li class="images__item images__item--sixth">
+        <picture>
+          <source srcset="/img-10.2e885329.png    1x, /img-10@2x.08a7bcd5.png 2x" media="(min-width: 1200px)">
+          <source srcset="/img-10.37a1b760.png    1x, /img-10@2x.3a4a75ee.png 2x" media="(min-width: 768px)">
+          <source srcset="/img-10.e565b5ad.png    1x, /img-10@2x.1efbd7bc.png 2x" media="(max-width: 767px)">
+          <img class="images__img" src="/img-10.e565b5ad.png" alt="Cow with milk">
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class=" section customer-reviews">
+    <div class="container">
+      <h2 class="visually-hidden">customer-reviews</h2>
+        <div class="multiple-items">
+            <article class="customer-reviews__block">
+                <picture class="customer-reviews__picture">
+                    <source srcset="/emily.21a06bca.webp 1x, /emily@2x.6c59b6c6.webp 2x" type="image/webp">
+                    <source srcset="/emily.740e9f26.png 1x, /emily@2x.9a0d64ea.png 2x">
+                    <img class="customer-reviews__foto" src="/emily.740e9f26.png" alt="girl-customers" width="85">
+                  </picture>  
+                  <div class="customer-reviews__container">
+                    <p class="customer-reviews__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                    </p>
+                  </div>            
+                 <h3 class="customer-reviews__subtitle">Emily, Los Angeles</h3>
+            </article>
+            <article class="customer-reviews__block">
+                <picture class="customer-reviews__picture">
+                    <source srcset="/mona.c76f2465.webp 1x, /mona@2x.bf6aa9ba.webp 2x" type="image/webp">
+                    <source srcset="/mona.196911b9.png 1x, /mona@2x.71b1e094.png 2x">
+                    <img class="customer-reviews__foto" src="/mona.196911b9.png" alt="girl-customers" width="85">
+                  </picture>
+                  <div class="customer-reviews__container">
+                    <p class="customer-reviews__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                    </p>
+                  </div>  
+
+                 <h3 class="customer-reviews__subtitle">Mona, Chicago</h3>
+            </article>
+            <article class="customer-reviews__block">
+                <picture class="customer-reviews__picture">
+                    <source srcset="/jane.9518c65d.webp 1x, /jane@2x.5f44d896.webp 2x" type="image/webp">
+                    <source srcset="/jane.a79816f9.png 1x, /jane@2x.7723511e.png 2x">
+                    <img class="customer-reviews__foto" src="/jane.a79816f9.png" alt="girl-customers" width="85">
+                  </picture>
+                  <div class="customer-reviews__container">
+                    <p class="customer-reviews__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                    </p>
+                  </div>  
+                 <h3 class="customer-reviews__subtitle">Jane, New York</h3>
+            </article>
+          </div>
+
+    </div>
+</section>
+
+
+      <section id="contact" class="section section-contacts">
+  <div class="container">
+    <h2 class="visually-hidden">Contacts</h2>
+    <ul class="section-contacts__list">
+      <li class="section-contacts__item">
+        <div class="section-contacts__thumb">
+          <p class="section-contacts__hero section-contacts__hero--yellow">cafe</p>
+          <h3 class="section-contacts__title">Chicago</h3>
+          <p class="section-contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        </div>
+        <ul class="working-hours">
+          <li class="working-hours__item">
+            <p class="working-hours__text">Monday - Friday</p>
+            <p class="working-hours__time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="working-hours__item">
+            <p class="working-hours__text">Saturday - Sunday</p>
+            <p class="working-hours__time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="section-contacts__nav">
+          <li><a class="section-contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
+          <li><a class="section-contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+        </ul>
+      </li>
+      <li class="section-contacts__item">
+        <div class="section-contacts__thumb">
+          <p class="section-contacts__hero section-contacts__hero--green">FOOD TRUCK</p>
+          <h3 class="section-contacts__title">Los Angeles</h3>
+          <p class="section-contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        </div>
+        <ul class="working-hours">
+          <li class="working-hours__item">
+            <p class="working-hours__text">Monday - Friday</p>
+            <p class="working-hours__time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="working-hours__item">
+            <p class="working-hours__text">Saturday - Sunday</p>
+            <p class="working-hours__time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="section-contacts__nav">
+          <li><a class="section-contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
+          <li><a class="section-contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+        </ul>
+      </li>
+      
+      <li class="section-contacts__item">
+        <div class="section-contacts__thumb">
+          <p class="section-contacts__hero section-contacts__hero--yellow">cafe</p>
+          <h3 class="section-contacts__title">New York</h3>
+          <p class="section-contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+        </div>
+        <ul class="working-hours">
+          <li class="working-hours__item">
+            <p class="working-hours__text">Monday - Friday</p>
+            <p class="working-hours__time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="working-hours__item">
+            <p class="working-hours__text">Saturday - Sunday</p>
+            <p class="working-hours__time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="section-contacts__nav">
+          <li><a class="section-contacts__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
+          <li><a class="section-contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+    <div class="section-contacts__buttons">
+      <button class="section-contacts__button section-contacts__button--red" type="button" data-modal-contacts-open=""> Our Locations 
+      <svg class="section-contacts__icon" width="12" height="12">
+          <use href="/icon.ca1be82a.svg#icon-vectorright"></use>
+        </svg>
+      </button>
+      <button class="section-contacts__button section-contacts__button--white" type="button"> Franchise 
+        <svg class="section-contacts__icon" width="12" height="12">
+          <use href="/icon.ca1be82a.svg#icon-vectorright"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+<!-- backdrop -->
+
+  <div class="backdrop is-hidden" data-modal-contacts="">
+    <div class="modal">
+      <!-- modal-form -->
+
+      <form class="form">
+        <div role="group" class="container-form">
+          <strong class="form__title">
+            Where are we?</strong>
+          <div class="iframe">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1O47jox12uSaq8da867_h2dFhKbIRXmA&hl=ru&ehbc=2E312F" width="100%" height="100%"></iframe>
+          </div>
+      <button class="modal__button" type="button" data-modal-contacts-close="">
+        <svg width="30" height="30">
+          <use href="/icon.6f9183eb.svg#icon-icon-close"></use>
+        </svg>
+      </button>
+        </div>
+    </form></div>
+  </div>
+
+</section>
+
+    </main>
+    <footer>
+      <div class="footer footer__style">
+
+<div class="container footer__items">
+    <p class="footer__title-1">homemade ice cream made <span class="footer__title-2">with passion</span></p>
+    <address class="footer__contacts">
+        <ul class="footer__social">
+        <li class="footer__social-item">
+            <a href="#" target="_blank" rel="noreferrer noopener" class="footer__social-link">
+            <svg class="footer__social-icon" width="32" height="32">
+                <use href="/symbol-defs.be1b1c39.svg#icon-github"></use>
+            </svg>
+            </a>
+            </li>
+        <li class="footer__social-item">
+            <a href="#" target="_blank" rel="noreferrer noopener" class="footer__social-link">
+            <svg class="footer__social-icon" width="32" height="32">
+                <use href="/symbol-defs.be1b1c39.svg#icon-telegram"></use>
+            </svg>
+            </a>
+        </li>
+        <li class="footer__social-item">
+            <a href="#" target="_blank" rel="noreferrer noopener" class="footer__social-link">
+            <svg class="footer__social-icon" width="32" height="32">
+                <use href="/symbol-defs.be1b1c39.svg#icon-facebook"></use>
+            </svg>
+            </a>
+        </li>
+        </ul>
+
+        <p class="footer__tel"> Feel free to contact <a href="tel:+610383766284" class="footer__tel-color">+61 (0) 383 766 284</a></p>
+    </address>
+</div>
+
+<div class="footer__policy">
+    <p class="footer__policy-text">&copy; 2022 - IceCream. All Rights Reserved.</p>
+</div>
+
+</div>
+    </footer>
+
+    <!-- slick jquery -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- slick js -->
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/index.975ef6c8.js" defer=""></script>
+  </body>
+</html>
